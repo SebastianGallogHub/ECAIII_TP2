@@ -72,7 +72,7 @@ plot(tout,v1, 'r--',tout,v2, 'g--',tout,v3, 'b--');hold on;
 plot(tout,p1, 'r',tout,p2, 'g',tout,p3, 'b');hold on; 
 legend('Vf_1','Vf_2','Vf_3','Trigger 1','Trigger 2','Trigger 3','Location','NorthEastOutside');
 ylabel('Tensión (V)');
-title('T1 desfasado: alfa=pi/3; P=100W; Q=100VAr');
+title('T1 desfasado: alfa=pi/3; P=100W; Q=100VAr; anchoPulso=5%');
 
 subplot(312);
 plot(tout, th1, 'k','LineWidth', 1.1); hold on;
@@ -93,7 +93,7 @@ subplot(211);
 plot(tout,Vc,'b',tout,Vc_ef,'k',tout,Vc_m,'r--');grid on;
 ylabel('Tensión (V)');
 legend('Instantánea','Eficaz','Media','Location','NorthEastOutside');
-title('T1 desfasado: alfa=pi/3; P=100W; Q=100VAr');
+title('T1 desfasado: alfa=pi/3; P=100W; Q=100VAr; anchoPulso=5%');
 
 subplot(212);
 plot(tout,icarga,'b',tout,icarga_ef,'k',tout,icarga_m,'r--');grid on;
@@ -173,7 +173,7 @@ plot(tout,p1, 'r',tout,p2, 'g',tout,p3, 'b');hold on;
 plot(tout, pCorto, 'k','LineWidth',1.1);hold on; 
 legend('Vf_1','Vf_2','Vf_3','Trigger 1','Trigger 2','Trigger 3', 'Corto','Location','NorthEastOutside');
 ylabel('Tensión (V)');
-title('T1 desfasado: alfa=pi/3; P=100W; Q=100VAr; anchoPulso=40%');
+title('T1 Cortocircuitado: alfa=pi/3; P=100W; Q=100VAr; anchoPulso=5%');
 
 subplot(312);
 plot(tout, th1, 'k','LineWidth', 1.1); hold on;
@@ -194,7 +194,7 @@ subplot(211);
 plot(tout,Vc,'b',tout,Vc_ef,'k',tout,Vc_m,'r--');grid on;
 ylabel('Tensión (V)');
 legend('Instantánea','Eficaz','Media','Location','NorthEastOutside');
-title('T1 desfasado: alfa=pi/3; P=100W; Q=100VAr; anchoPulso=40%');
+title('T1 Cortocircuitado: alfa=pi/3; P=100W; Q=100VAr; anchoPulso=5%');
 
 subplot(212);
 plot(tout,icarga,'b',tout,icarga_ef,'k',tout,icarga_m,'r--');grid on;
